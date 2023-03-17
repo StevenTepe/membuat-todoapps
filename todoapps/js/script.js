@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       event.preventDefault();
       addTodo();
     });
+});
 
 document.addEventListener(RENDER_EVENT, function () {
     const uncompletedTODOList = document.getElementById('todos');
@@ -30,7 +31,6 @@ document.addEventListener(RENDER_EVENT, function () {
           isCompleted
         }
       }
-  });
 
   function addTodo() {
     const textTodo = document.getElementById('title').value;
